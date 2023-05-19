@@ -21,7 +21,7 @@ except ValueError:
     port = 9090
 
 
-message = ('Hello world!')
+message = 'Hello world!'
 loop = asyncio.get_event_loop()
 loop.run_until_complete(tcp_echo_client(message))
 loop.close()
